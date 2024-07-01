@@ -27,16 +27,13 @@ export default function ContactList({ setSelectedContactId }) {
 
   return (
     <table>
-      <thead>
         <tr>
           <th colSpan="3">Contact List</th>
         </tr>
-      </thead>
-      <tbody>
         <tr>
-          <td>Name</td>
-          <td>Email</td>
-          <td>Phone</td>
+          <td className="key">Name</td>
+          <td className="key">Email</td>
+          <td className="key">Phone</td>
         </tr>
         {contacts.map((contact) => {
           return (
@@ -47,7 +44,6 @@ export default function ContactList({ setSelectedContactId }) {
             />
           );
         })}
-      </tbody>
     </table>
   );
 }
